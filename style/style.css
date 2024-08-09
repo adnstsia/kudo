@@ -163,7 +163,7 @@ body{
 .social__link-tel{
     margin-right: 18px;
     color: var(--color-white);
-    font-size: 27px;
+    font-size: 18px;
     font-weight: 500;
 }
 .social__link{
@@ -508,7 +508,7 @@ body{
 .footer__social__link-tel{
     margin-right: 15px;
     color: var(--color-white);
-    font-size: 27px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -530,6 +530,7 @@ body{
     }
     .footer__logo{
         left: 30px;
+        border-radius: 15px;
     }
 }
 
