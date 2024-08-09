@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=d29895a8-a7da-4392-bf10-0b06053d960f&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script defer src="script/swiper-bundle.min.js"></script>
+    <script defer src="script/script.js"></script>
+    <title>Секция кудо</title>
+</head>
+<body>
+    <header class="header container">
+    <div class="header__container">
+        <button class="header__burger btn-reset">
+            <svg width="30" height="17" viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="header__burger-path" d="M1.95508 1.15692H28.2427" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <path class="header__burger-path" d="M1.95508 8.5H28.2427" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <path class="header__burger-path" d="M1.95508 15.8431H28.2427" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+        </button>
+        <div class="address">
+            <div class="address__left">
+                <a href="#" class="address__logo-link link-reset"></a>
+                <a href="#map" class="address__addr-link link-reset">метро Автозаводская/Дубровка
+                    г.&nbsp;Москва&nbsp;улица Новоостаповская д4&nbsp;к2</a>
+            </div>
+            <a href="mailto:ilya.levinov@gmail.com" class="address__email link-reset">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="address__email-path" d="M4.35193 6.62186L12.5805 12.6219L20.3519 6.62186M21.3519 8.82181V16.4218C21.3519 17.5419 21.3521 18.1021 21.1342 18.5299C20.9424 18.9062 20.636 19.2121 20.2597 19.4038C19.8319 19.6218 19.2722 19.6219 18.1521 19.6219H6.55212C5.43202 19.6219 4.87155 19.6218 4.44373 19.4038C4.0674 19.2121 3.76166 18.9062 3.56992 18.5299C3.35193 18.1021 3.35193 17.5419 3.35193 16.4218V8.82181C3.35193 7.7017 3.35193 7.14172 3.56992 6.7139C3.76166 6.33757 4.0674 6.03159 4.44373 5.83984C4.87155 5.62186 5.43202 5.62186 6.55212 5.62186H18.1521C19.2722 5.62186 19.8319 5.62186 20.2597 5.83984C20.636 6.03159 20.9424 6.33757 21.1342 6.7139C21.3521 7.14172 21.3519 7.7017 21.3519 8.82181Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>
+                        ilya.levinov@gmail.com
+                    </p>
+            </a>
+        </div>
+        <button class="header__close btn-reset"><svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8741 0.998826C1.48357 0.608302 0.85041 0.608302 0.459885 0.998826C0.0693611 1.38935 0.0693611 2.02252 0.459885 2.41304L9.1074 11.0605L0.58098 19.587C0.190456 19.9775 0.190456 20.6107 0.58098 21.0012C0.971504 21.3917 1.60467 21.3917 1.99519 21.0012L10.5216 12.4748L19.048 21.0012C19.4385 21.3917 20.0717 21.3917 20.4622 21.0012C20.8528 20.6107 20.8528 19.9775 20.4622 19.587L11.9358 11.0605L20.5833 2.41304C20.9739 2.02252 20.9739 1.38935 20.5833 0.998827C20.1928 0.608303 19.5596 0.608303 19.1691 0.998827L10.5216 9.64634L1.8741 0.998826Z" fill="white"/>
+            </svg>
+            </button>
+        <ul class="social list-reset">
+             <li class="social__item">
+                <a href="tel:+79262735080" class="social__link-tel link-reset">+7(926)273-50-80</a>
+             </li>
+             <li class="social__item">
+                <a href="https://t.me/@ilya_levinov" target="_blank" class="social__link link-reset">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.351929" y="0.621857" width="44" height="44" rx="22" fill="#28A8EA"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5893 22.0793C19.4212 19.9624 22.6431 18.5669 24.2553 17.8926C28.8582 15.9674 29.8147 15.633 30.438 15.622C30.5752 15.6195 30.8817 15.6537 31.0803 15.8157C31.248 15.9526 31.2942 16.1374 31.3162 16.2671C31.3383 16.3968 31.3658 16.6923 31.3439 16.9232C31.0946 19.5586 30.0152 25.954 29.4661 28.9057C29.2338 30.1547 28.7763 30.5735 28.3334 30.6144C27.3709 30.7035 26.64 29.9748 25.7077 29.3603C24.249 28.3987 23.4248 27.8001 22.0089 26.8619C20.3724 25.7774 21.4332 25.1815 22.3658 24.2074C22.6099 23.9526 26.8508 20.0737 26.9329 19.7219C26.9432 19.6779 26.9527 19.5138 26.8558 19.4272C26.7588 19.3406 26.6158 19.3702 26.5126 19.3938C26.3663 19.4272 24.0358 20.976 19.5213 24.0404C18.8598 24.4971 18.2607 24.7197 17.7239 24.708C17.1321 24.6951 15.9937 24.3716 15.1474 24.095C14.1094 23.7557 13.2845 23.5763 13.3563 23.0001C13.3937 22.6999 13.8047 22.393 14.5893 22.0793Z" fill="white"/>
+                        </svg>
+                </a>
+             </li>
+             <li class="social__item">
+                <a href="https://wa.me/+79262735080" target="_blank" class="social__link link-reset">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.351929" y="0.621857" width="44" height="44" rx="22" fill="#53F26F"/>
+                        <g clip-path="url(#clip0_45_200)">
+                        <path d="M34.3519 22.274C34.3519 28.7088 29.1345 33.9262 22.5258 33.9262C20.4389 33.9262 18.5258 33.4045 16.7867 32.5349L10.3519 34.6219L12.4389 28.361C11.3954 26.6219 10.6998 24.5349 10.6998 22.274C10.6998 15.8392 15.9171 10.6219 22.5258 10.6219C29.1345 10.6219 34.3519 15.8392 34.3519 22.274ZM22.5258 12.361C17.1345 12.361 12.6128 16.7088 12.6128 22.274C12.6128 24.361 13.3085 26.4479 14.5258 28.0132L13.3085 31.6653L17.1345 30.4479C18.6998 31.4914 20.6128 32.0132 22.5258 32.0132C27.9171 32.0132 32.4389 27.6653 32.4389 22.1001C32.4389 16.8827 28.0911 12.361 22.5258 12.361ZM28.4389 25.0566C28.4389 24.8827 28.0911 24.8827 27.9171 24.7088C27.5693 24.5349 26.178 23.8392 26.0041 23.8392C25.6563 23.6653 25.4824 23.6653 25.3085 24.0132C25.1345 24.361 24.6128 24.8827 24.4389 25.0566C24.265 25.2306 24.0911 25.2306 23.7432 25.0566C23.3954 24.8827 22.5258 24.5349 21.4824 23.6653C20.6128 22.9697 20.0911 21.9262 19.9171 21.7523C19.7432 21.4045 19.9171 21.2306 20.0911 21.2306C20.265 21.0566 20.4389 20.8827 20.6128 20.7088C20.7867 20.5349 20.7867 20.361 20.9606 20.1871C21.1345 20.0132 20.9606 19.8392 20.9606 19.6653C20.9606 19.4914 20.265 18.1001 20.0911 17.5784C19.9171 17.0566 19.5693 17.0566 19.3954 17.0566C19.2215 17.0566 19.0476 17.0566 18.8737 17.0566C18.6998 17.0566 18.0041 17.0566 17.8302 17.2306C17.4824 17.5784 16.7867 18.274 16.7867 19.6653C16.7867 21.0566 17.8302 22.4479 18.0041 22.6219C18.178 22.7958 20.0911 25.7523 22.8737 26.9697C25.8302 28.1871 25.8302 27.6653 26.3519 27.6653C26.8737 27.6653 28.0911 26.9697 28.265 26.274C28.6128 25.7523 28.6128 25.0566 28.4389 25.0566Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_45_200">
+                        <rect width="24" height="24" fill="white" transform="translate(10.3519 10.6219)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                </a>
+             </li>
+        </ul>
+    </div>
+    </header>
+    <div class="hero">
+        <div class="hero__container container">
+            <h1 class="hero__title">Секция кудо</h1>
+            <button class="hero__btn btn link-reset">
+                Записаться на тренировку
+            </button>
+        </div>
+    </div>
+    <div class="result container">
+        <div class="result__container">
+            <div class="result__title">В качестве результата тренировок</div>
+            <ul class="result__list list-reset">
+                <li class="result__item result__item-1">
+                    Уверенность в себе
+                </li>
+                <li class="result__item result__item-2">
+                    Приобретете навыки самообороны
+                </li>
+                <li class="result__item result__item-3">
+                    Cтанете более крепким физически и духовно
+                </li>
+                <li class="result__item result__item-4">
+                    Повысите уровень своей дисциплины
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="about container">
+        <div class="about__container">
+            <p class="about__text about__text-top">
+                Кудо - это современное, полноконтактное, восточное боевое искусство, которое включает в себя различные техники единоборств таких как Бокс, Тайский Бокс, Самбо и Бразильское Джиу Джитсу. В кудо разрешены удары руками, ногами, коленями и локтями, броски и переводы в партер, болевые и удушающие.
+            </p>
+            <p class="about__text">
+                Несмотря на то что наш вид спорта очень приближен к жизни, особое внимание мы уделяем безопасности всех  наших спортсменов особенно самых  маленьких. Например, амуниция занимающихся предусматривает специальную защиту головы, а именно шлем “neo head gear” которая позволяет отрабатывать технику эффективно и при этом максимально безопасно, без каких либо рассечений и травм. Кроме того для спортсменов не достигших 18-ти лет  соревнования проводятся  в специальной защитной кирасе(защита корпуса), щитках и перчатках. Каждые пол года в нашем клубе проводится аттестация которая позволяет Вам получать новый пояс
+            </p>
+        </div>
+    </div>
+    <div class="coach container">
+        <div class="coach__container">
+            <div class="coach__block">
+
+                <img src="img/coach.png" class="coach__img" alt="Фото тренера">
+                    <h3 class="coach__title">Тренер</h3>        
+                    <ol class="coach__list list-reset">
+                        <li class="coach__item">
+                            <span>01</span>
+                            <p>
+                                Черный пояс, I дан
+                            </p>
+                        </li>
+                        <li class="coach__item">
+                            <span>02</span>
+                            <p>
+                                Чемпионат Москвы 2016 – 3 место
+                            </p>
+                        </li>
+                        <li class="coach__item">
+                            <span>03</span>
+                            <p>
+                                Чемпионат Москвы 2017 – 2 место
+                            </p>
+                        </li>
+                        <li class="coach__item">
+                            <span>04</span>
+                            <p>
+                                Всероссийский турнир г.Иваново 2018 – 2 место
+                            </p>
+                        </li>
+                        <li class="coach__item">
+                            <span>05</span>
+                            <p>
+                                Rumble MMA Cup 2016 ММА – 2 место
+                            </p>
+                        </li>
+                    </ol>
+            </div>
+        </div>
+    </div>
+    <div class="adv container">
+        <div class="adv__container">
+            <p class="adv__descr">
+                Мы набираем в нашу школу восточных единоборств людей любых возрастов, детей, подростков и взрослых, любого уровня подготовки. В качестве результата тренировок Вы получите, уверенность в себе, приобретете навыки самообороны, повысите уровень своей дисциплины, станете более крепким физически и духовно. Записывайтесь в наш клуб на станции метро Автозаводская или Дубровка! 
+            </p>
+        </div>
+    </div>
+    <!-- <div class="slider container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide">5</div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button">          
+            <div class="swiper-button-prev">
+                <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.351929" y="0.540283" width="56" height="56" rx="28" fill="white"/>
+                    <path d="M33.6682 21.9541L31.645 19.9309L23.0355 28.5403L31.645 37.1498L33.6682 35.1266L27.0963 28.5403L33.6682 21.9541Z" fill="black" fill-opacity="0.54"/>
+                    </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.351929" y="0.540283" width="56" height="56" rx="28" fill="white"/>
+                    <path d="M23.0356 21.9541L25.0588 19.9309L33.6682 28.5403L25.0588 37.1498L23.0356 35.1266L29.6074 28.5403L23.0356 21.9541Z" fill="black" fill-opacity="0.54"/>
+                    </svg>              
+            </div>
+        </div>
+    </div> -->
+    <div class="form-wrap container" id="form">
+        <div class="form-wrap__block">
+            <form class="form">
+                <div class="form__title">Свяжитесь с нами</div>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя">
+                <input class="form__input form__input-tel" type="tel" name="name" id="name" placeholder="Номер телефона">
+                <input class="form__input-btn btn" type="submit" value="Записаться на тренировку">
+                <p class="form__descr">Нажимая "Записаться на тренировку", Вы соглашаетесь с 
+                    <a href="#" class="form__link link-reset">Политикой обработки персональных данных</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <div class="map container">
+        <div id="map" class="map__block" ></div>
+    </div>
+    <footer class="footer container">
+        <div class="footer__container">
+            <a href="#" class="footer__logo link-reset"></a>
+            <div class="footer__links links">
+                <div class="links__block">
+                    <p class="links__descr">Сайт федерации</p>
+                    <a href="kudo.ru" class="links__link link-reset" target="_blank">kudo.ru</a>
+                </div>
+                <div class="links__block">
+                    <p class="links__descr">Наш сайт</p>
+                    <a href="#" class="links__link link-reset" target="_blank">kudo.moscow</a>
+                </div>
+                <div class="links__block">
+                    <p class="links__descr">Адрес</p>
+                    <a href="#map" class="links__link links__link-address link-reset">метро Автозаводская/Дубровка индекс 115088
+                        г. Москва улица Новоостаповская д4 к2 </a>
+                </div>
+            </div>
+            <ul class="footer__social list-reset">
+                <li class="footer__social__item">
+                   <a href="tel:+79262735080" class="footer__social__link-tel link-reset">+7(926)273-50-80</a>
+                </li>
+                <li class="footer__social__item">
+                   <a href="https://t.me/@ilya_levinov" target="_blank" class="footer__social__link link-reset">
+                       <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect x="0.351929" y="0.621857" width="44" height="44" rx="22" fill="#28A8EA"/>
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5893 22.0793C19.4212 19.9624 22.6431 18.5669 24.2553 17.8926C28.8582 15.9674 29.8147 15.633 30.438 15.622C30.5752 15.6195 30.8817 15.6537 31.0803 15.8157C31.248 15.9526 31.2942 16.1374 31.3162 16.2671C31.3383 16.3968 31.3658 16.6923 31.3439 16.9232C31.0946 19.5586 30.0152 25.954 29.4661 28.9057C29.2338 30.1547 28.7763 30.5735 28.3334 30.6144C27.3709 30.7035 26.64 29.9748 25.7077 29.3603C24.249 28.3987 23.4248 27.8001 22.0089 26.8619C20.3724 25.7774 21.4332 25.1815 22.3658 24.2074C22.6099 23.9526 26.8508 20.0737 26.9329 19.7219C26.9432 19.6779 26.9527 19.5138 26.8558 19.4272C26.7588 19.3406 26.6158 19.3702 26.5126 19.3938C26.3663 19.4272 24.0358 20.976 19.5213 24.0404C18.8598 24.4971 18.2607 24.7197 17.7239 24.708C17.1321 24.6951 15.9937 24.3716 15.1474 24.095C14.1094 23.7557 13.2845 23.5763 13.3563 23.0001C13.3937 22.6999 13.8047 22.393 14.5893 22.0793Z" fill="white"/>
+                           </svg>
+                   </a>
+                </li>
+                <li class="footer__social__item">
+                   <a href="https://wa.me/+79262735080" target="_blank" class="footer__social__link link-reset">
+                       <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect x="0.351929" y="0.621857" width="44" height="44" rx="22" fill="#53F26F"/>
+                           <g clip-path="url(#clip0_45_200)">
+                           <path d="M34.3519 22.274C34.3519 28.7088 29.1345 33.9262 22.5258 33.9262C20.4389 33.9262 18.5258 33.4045 16.7867 32.5349L10.3519 34.6219L12.4389 28.361C11.3954 26.6219 10.6998 24.5349 10.6998 22.274C10.6998 15.8392 15.9171 10.6219 22.5258 10.6219C29.1345 10.6219 34.3519 15.8392 34.3519 22.274ZM22.5258 12.361C17.1345 12.361 12.6128 16.7088 12.6128 22.274C12.6128 24.361 13.3085 26.4479 14.5258 28.0132L13.3085 31.6653L17.1345 30.4479C18.6998 31.4914 20.6128 32.0132 22.5258 32.0132C27.9171 32.0132 32.4389 27.6653 32.4389 22.1001C32.4389 16.8827 28.0911 12.361 22.5258 12.361ZM28.4389 25.0566C28.4389 24.8827 28.0911 24.8827 27.9171 24.7088C27.5693 24.5349 26.178 23.8392 26.0041 23.8392C25.6563 23.6653 25.4824 23.6653 25.3085 24.0132C25.1345 24.361 24.6128 24.8827 24.4389 25.0566C24.265 25.2306 24.0911 25.2306 23.7432 25.0566C23.3954 24.8827 22.5258 24.5349 21.4824 23.6653C20.6128 22.9697 20.0911 21.9262 19.9171 21.7523C19.7432 21.4045 19.9171 21.2306 20.0911 21.2306C20.265 21.0566 20.4389 20.8827 20.6128 20.7088C20.7867 20.5349 20.7867 20.361 20.9606 20.1871C21.1345 20.0132 20.9606 19.8392 20.9606 19.6653C20.9606 19.4914 20.265 18.1001 20.0911 17.5784C19.9171 17.0566 19.5693 17.0566 19.3954 17.0566C19.2215 17.0566 19.0476 17.0566 18.8737 17.0566C18.6998 17.0566 18.0041 17.0566 17.8302 17.2306C17.4824 17.5784 16.7867 18.274 16.7867 19.6653C16.7867 21.0566 17.8302 22.4479 18.0041 22.6219C18.178 22.7958 20.0911 25.7523 22.8737 26.9697C25.8302 28.1871 25.8302 27.6653 26.3519 27.6653C26.8737 27.6653 28.0911 26.9697 28.265 26.274C28.6128 25.7523 28.6128 25.0566 28.4389 25.0566Z" fill="white"/>
+                           </g>
+                           <defs>
+                           <clipPath id="clip0_45_200">
+                           <rect width="24" height="24" fill="white" transform="translate(10.3519 10.6219)"/>
+                           </clipPath>
+                           </defs>
+                           </svg>
+                   </a>
+                </li>
+           </ul>
+        </div>
+    </footer>
+</body>
+</html>
