@@ -265,6 +265,11 @@ body{
 .about__text-top{
     margin-bottom: 25px;
 }
+
+.about__text-bottom{
+    margin-top: 25px;
+}
+
 /* coach */
 .coach__container{
     padding: 68px 370px 69px;
