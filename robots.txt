@@ -1,0 +1,58 @@
+User-Agent: *
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: AdsBot-Google
+Disallow:
+
+User-agent: Googlebot-Image
+Disallow:
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SEOkicks
+Disallow: /
+
+User-agent: facebookexternalhit
+Disallow: /
+
+User-agent: GrapeshotCrawler
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: BegunAdvertising 
+Disallow: /
+
+User-agent: Begun 
+Disallow: /
+
+User-agent: NTENTbot 
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SputnikBot 
+Disallow: /
+
+User-agent: MJ12bot 
+Disallow: /
+
+User-agent: MegaIndex.ru 
+Disallow: /
+
+User-agent: BLEXBot 
+Disallow: /
+
+User-Agent: trendictionbot 
+Disallow: /
+
+User-agent: Mediapartners-Google
+Disallow: /
