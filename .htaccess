@@ -1,39 +1,4 @@
+Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
-
-RewriteCond %{THE_REQUEST} \s[^?]*//
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-
-#moz.com
-RewriteCond %{HTTP_USER_AGENT} rogerbot [OR]
-RewriteCond %{HTTP_USER_AGENT} dotbot [OR]
-#majestic.com
-RewriteCond %{HTTP_USER_AGENT} MJ12bot [OR]
-#Semrush
-RewriteCond %{HTTP_USER_AGENT} SemrushBot [OR]
-#gigablast.com
-RewriteCond %{HTTP_USER_AGENT} gigabot [OR]
-#ahrefs.com
-RewriteCond %{HTTP_USER_AGENT} AhrefsBot [OR]
-#Linkpad
-RewriteCond %{HTTP_USER_AGENT} LinkpadBot [OR]
-#SerpStat
-RewriteCond %{HTTP_USER_AGENT} Serpstatbot [OR]
-RewriteCond %{HTTP_USER_AGENT} spbot
-RewriteRule .* - [F]
-
-SetEnvIfNoCase User-Agent .*ahrefs.* search_robot
-SetEnvIfNoCase User-Agent .*semrush.* search_robot
-SetEnvIfNoCase User-Agent .*serpstat.* search_robot
-SetEnvIfNoCase User-Agent .*megaindex.* search_robot
-SetEnvIfNoCase User-Agent .*majestic.* search_robot
-SetEnvIfNoCase User-Agent .*mail.* search_robot
-#SetEnvIfNoCase User-Agent .*yandex.* search_robot
-
-
-Order Allow,Deny
-Allow from all
-Deny from env=search_robot
+Redirect 301 / https://kudoclub.moscow
